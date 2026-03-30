@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NationalPark> <!-- ERROR 1: wrong root -->
+
+  <NationalPark> <!-- ERROR 2: missing Rating -->
+    <Name>Grand Canyon</Name>
+    <Phone>928-638-7496</Phone>
+    <Address>
+      <Number>8</Number>
+      <Street>S Entrance Road</Street>
+      <City>Grand Canyon</City>
+      <State>AZ</State>
+      <Zip>86023</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.8">
+    <Name>Yellowstone</Name>
+    <!-- ERROR 3: missing Phone -->
+    <Address>
+      <Number>2</Number>
+      <Street>Park Rd</Street>
+      <City>Yellowstone</City>
+      <State>WY</State>
+      <Zip>82190</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.7">
+    <Name>Yosemite</Name>
+    <Name>Duplicate Name</Name> <!-- ERROR 5 -->
+    <Phone>209-372-0200</Phone>
+    <Address>
+      <Number>1</Number>
+      <Street>Ahwahnee Dr</Street>
+      <City>Yosemite</City>
+      <State>CA</State>
+      <Zip>95389</Zip>
+    <!-- ERROR 4: missing closing tag -->
+
+  </NationalPark>
+
+</NationalPark>
